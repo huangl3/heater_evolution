@@ -46,14 +46,11 @@ for i=1:num-1
 end
 %f=B\y;
 [U,D,V]=svd(B,'econ');
-size(U)
-size(D)
-size(V)
 d=length(diag(D));
 figure
 d=diag(D);
 plot(d)
-legend('sigular values')
+legend('sigular values','interpreter','latex')
 
 temp=0.0;
 temp1=length(d);
